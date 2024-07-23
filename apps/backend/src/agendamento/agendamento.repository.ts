@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { Agendamento, RespositorioAgendamento } from '@barba/core';
+import { Agendamento, RepositorioAgendamento } from '@barba/core';
 import { PrismaService } from 'src/db/prisma.service';
 
 @Injectable()
-export class AgendamentoRepository implements RespositorioAgendamento {
+export class AgendamentoRepository implements RepositorioAgendamento {
     constructor(private readonly prismaService: PrismaService) { }
 
     async criar(agendamento: Agendamento): Promise<void> {
