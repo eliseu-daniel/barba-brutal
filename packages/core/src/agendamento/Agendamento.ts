@@ -1,5 +1,5 @@
-import { Profissional } from "../profissional"
-import { Servico } from "../servico"
+import { Profissional } from '../profissional'
+import { Servico } from '../servico'
 
 export default interface Agendamento {
     id: number

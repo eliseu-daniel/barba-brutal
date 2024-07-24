@@ -4,8 +4,8 @@ import { AgendamentoRepository } from './agendamento.repository';
 import { DbModule } from 'src/db/db.module';
 
 @Module({
-    imports: [DbModule],
-    controllers: [AgendamentoController],
-    providers: [AgendamentoRepository],
+  imports: [DbModule],
+  controllers: [AgendamentoController],
+  providers: [AgendamentoRepository],
 })
-export class AgendamentoModule { }
+export class AgendamentoModule {}

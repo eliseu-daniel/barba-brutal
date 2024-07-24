@@ -15,7 +15,7 @@ datasource db {
 
 model Profissional {
   id                   Int           @id @default(autoincrement())
-  nome                 String
+  nome                 String        @unique
   descricao            String
   imagemUrl            String
   avaliacao            Float

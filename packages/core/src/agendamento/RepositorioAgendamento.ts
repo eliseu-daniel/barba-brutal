@@ -1,4 +1,4 @@
-import Agendamento from "./Agendamento";
+import Agendamento from './Agendamento'
 
 export default interface RepositorioAgendamento {
     criar(agendamento: Agendamento): Promise<void>

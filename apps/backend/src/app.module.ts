@@ -8,4 +8,4 @@ import { AgendamentoModule } from './agendamento/agendamento.module';
   controllers: [],
   providers: [],
 })
-export class AppModule { }
+export class AppModule {}

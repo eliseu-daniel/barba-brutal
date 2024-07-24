@@ -2,7 +2,7 @@ import { TEMPO_SLOT } from '../constants'
 import RepositorioAgendamento from './RepositorioAgendamento'
 
 export default class ObterHorariosOcupados {
-    constructor(private readonly repo: RepositorioAgendamento) { }
+    constructor(private readonly repo: RepositorioAgendamento) {}
 
     async executar(profissionalId: number, data: Date): Promise<string[]> {
         const agendamentos = await this.repo.buscarPorProfissionalEData(profissionalId, data)
